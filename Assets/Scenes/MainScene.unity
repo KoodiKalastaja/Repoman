@@ -767,7 +767,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07cc289820aa6a447a76b9d91eb71a5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Triangle
-  rotateSpeed: 0.7
+  rotateSpeed: 25
 --- !u!212 &1438536620
 SpriteRenderer:
   serializedVersion: 2
@@ -1178,15 +1178,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5450790909818361805, guid: 6f562bf87fcfa0d4483c043ee5023f97, type: 3}
       propertyPath: m_Color.b
-      value: 1
+      value: 0.18534178
       objectReference: {fileID: 0}
     - target: {fileID: 5450790909818361805, guid: 6f562bf87fcfa0d4483c043ee5023f97, type: 3}
       propertyPath: m_Color.g
-      value: 0.1655653
+      value: 0.46226418
       objectReference: {fileID: 0}
     - target: {fileID: 5450790909818361805, guid: 6f562bf87fcfa0d4483c043ee5023f97, type: 3}
       propertyPath: m_Color.r
-      value: 0.08018869
+      value: 0.19929636
       objectReference: {fileID: 0}
     - target: {fileID: 8934710990107440049, guid: 6f562bf87fcfa0d4483c043ee5023f97, type: 3}
       propertyPath: m_Name
