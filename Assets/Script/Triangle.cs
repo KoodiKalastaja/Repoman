@@ -2,9 +2,6 @@ using UnityEngine;
 
 public class Triangle : MonoBehaviour
 {
-    float spin = 0;
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         
@@ -13,6 +10,15 @@ public class Triangle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0f, 1f, 0f, Space.Self);
+        Go();
+    }
+
+    void Go()
+    {
+        if (Input.GetKeyDown("space")) 
+        {
+            transform.Rotate(0f, 1f, 0f, Space.Self); 
+            Debug.Log("Spinning");
+        }
     }
 }
