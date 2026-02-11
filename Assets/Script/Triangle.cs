@@ -2,24 +2,16 @@ using UnityEngine;
 
 public class Triangle : MonoBehaviour
 {
-    private bool isRotating = false;
-    // Update is called once per frame
+    public float rotateSpeed = 0.7f;
+
     void Update()
     {
-        if (Input.GetKeyDown("space"))
-        {
-            isRotating = true;
-        }
-        if (Input.GetKeyUp("space"))
-        {
-            isRotating = false;
-        }
-        if (isRotating)
-            Go();
-    }
-    void Go()
-    {
-        transform.Rotate(0f, 1f, 0f, Space.Self); 
-        Debug.Log("Spinning");
+        float yRotation = Input.GetAxis("Vertical") * rotateSpeed;
+        float xRotation = Input.GetAxis("Horizontal") * rotateSpeed;
+
+        yRotation *= Time.deltaTime;
+        xRotation *= Time.deltaTime;
+
+        transform.Rotate(yRotation * rotateSpeed, xRotation * rotateSpeed, 0f, Space.Self);
     }
 }
